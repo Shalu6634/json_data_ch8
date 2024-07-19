@@ -1,16 +1,25 @@
-# json_data_ch8
+## json_data_ch8
+## what is Json ?
+- JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate.
 
-A new Flutter project.
+## syntax
+- Data is represented in key/value pairs.
+- Keys are strings and are enclosed in double quotes.
+- Values can be strings, numbers, objects, arrays, true, false, or null
 
-## Getting Started
+```dart
 
-This project is a starting point for a Flutter application.
+{
+  "name": "John Doe",
+  "age": 30,
+  "isStudent": false,
+  "courses": ["Math", "Science"],
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown"
+  }
+}
+```
+<img src="https://github.com/user-attachments/assets/7db8c9d1-eca2-447c-9d27-35a4d30118c6"  height=25%  width = 25%>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
