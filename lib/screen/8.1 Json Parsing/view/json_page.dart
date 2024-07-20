@@ -13,7 +13,9 @@ class JsonPage extends StatelessWidget {
         Provider.of<PhotoProvider>(context, listen: true);
     return Scaffold(
       appBar: AppBar(
-        title: Text('JSON Parsing'),
+        backgroundColor: Colors.white,
+        centerTitle: true,elevation: 8,
+        title: Text('Json Parsing',style: TextStyle(color: Colors.black),),
       ),
       body: ListView.builder(
         itemCount: photoProvider.photoList.length,

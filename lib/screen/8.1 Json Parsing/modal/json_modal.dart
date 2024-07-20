@@ -1,5 +1,4 @@
 
-
 class JsonPhoto
 {
   late String title;
