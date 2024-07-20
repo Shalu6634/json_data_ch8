@@ -10,7 +10,7 @@ void main() {
       providers: [
         ChangeNotifierProvider(
           create: (context) => UserProvider(),
-        )
+        ),
       ],
       builder: (context, child) => MyApp(),
     ),

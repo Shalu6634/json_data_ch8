@@ -9,6 +9,7 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
     UserProvider userProvider = Provider.of<UserProvider>(context);
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text('User Data'),

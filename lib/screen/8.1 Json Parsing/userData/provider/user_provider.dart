@@ -7,6 +7,7 @@ import '../modal/user_modal.dart';
 
 class UserProvider extends ChangeNotifier
 {
+
   List<UserModal>  userList=[];
   Future<void> jsonParsing()
   async {

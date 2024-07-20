@@ -45,6 +45,7 @@ class Address {
       suite: m1['suite'],
       city: m1['city'],
       zipcode: m1['zipcode'],
+
       geo: Geo.fromJson(m1['geo']),
     );
   }
