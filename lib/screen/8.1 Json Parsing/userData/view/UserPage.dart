@@ -9,7 +9,6 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
     UserProvider userProvider = Provider.of<UserProvider>(context);
     return Scaffold(
-
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text('User Data'),
@@ -18,10 +17,11 @@ class UserPage extends StatelessWidget {
       ),
       body: ListView.builder(
         itemCount: userProvider.userList.length,
-        itemBuilder: (context, index) => ListTile(leading: Text('${userProvider.userList[index].id}'),
-          title: Text('${userProvider.userList[index].name}'),
-          subtitle: Text('${userProvider.userList[index].company.name}'),
-          trailing: Text('${userProvider.userList[index].website}')
+        itemBuilder: (context, index) => ListTile(
+          leading: Text(userProvider.userList[index].id.toString()),
+          title: Text(userProvider.userList[index].name),
+          subtitle: Text(userProvider.userList[index].company.name),
+          trailing: Text(userProvider.userList[index].website),
           // Text('${userProvider.userList[index].name  +   " " +  userProvider.userList[index].address.zipcode}'),
         ),
       ),
